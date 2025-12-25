@@ -1,0 +1,695 @@
+*{
+    margin: 0 auto;
+}
+.pricing-hero {
+  padding: 100px 20px 120px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.pricing-hero h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #111827;
+}
+
+.pricing-hero p {
+  max-width: 820px;
+  margin: 0 auto 36px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #4b5563;
+}
+
+/* Buttons */
+.pricing-actions {
+  display: flex;
+  justify-content: space-evenly;
+  /* gap: 16px; */
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: #dc2626;
+  color: #ffffff;
+  border: none;
+  padding: 12px 22px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: #b91c1c;
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  background: #ffffff;
+  color: #111827;
+  border: 1px solid #d1d5db;
+  padding: 12px 22px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-outline:hover {
+  background: #f9fafb;
+  border-color: #9ca3af;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .pricing-hero h1 {
+    font-size: 28px;
+  }
+
+  .pricing-hero p {
+    font-size: 15px;
+  }
+}
+
+.plans-section {
+  padding: 100px 20px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.plans-section h2 {
+  font-size: 36px;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+.plans-subtitle {
+  max-width: 850px;
+  margin: 0 auto 60px;
+  color: #4b5563;
+  font-size: 16px;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* CARD */
+.plan-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px 28px;
+  text-align: left;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+.plan-card.featured {
+  border: 2px solid #ef4444;
+  transform: translateY(-8px);
+}
+
+.plan-card h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.plan-price {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.plan-note {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 18px;
+}
+
+/* Highlight box */
+.plan-highlight {
+  border-left: 4px solid #ef4444;
+  padding-left: 14px;
+  margin-bottom: 22px;
+  font-size: 14px;
+}
+
+.plan-highlight span {
+  display: block;
+  margin-top: 6px;
+  color: #374151;
+}
+
+/* Buttons */
+.full {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.btn-primary {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 340px;
+  
+}
+
+.btn-primaryi{
+background: #dc2626;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.btn-outline {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 0;
+}
+
+.btn-primary:hover {
+  background: #b91c1c;
+}
+
+.btn-outline:hover {
+  background: #f9fafb;
+}
+
+/* Included list */
+.plan-card h4 {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.plan-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 22px;
+}
+
+.plan-card li {
+  font-size: 14px;
+  color: #374151;
+  margin-bottom: 8px;
+}
+
+.plan-card li::before {
+  content: "✓";
+  color: #16a34a;
+  margin-right: 8px;
+}
+
+.plan-link {
+  font-size: 13px;
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .plans-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .plan-card.featured {
+    transform: none;
+  }
+}
+
+.payg-section {
+  padding: 80px 20px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.payg-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.payg-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto 70px;
+}
+
+.payg-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 30px 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.payg-card:hover {
+  transform: translateY(-6px);
+}
+
+.plan-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.payg-card h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.payg-card h3 span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.plan-desc {
+  font-size: 14px;
+  color: #666;
+}
+
+.payg-bottom {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.payg-bottom h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.payg-bottom p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.pricing-compare {
+  padding: 80px 20px;
+  background: #fff;
+}
+
+/* ===== TABLE ===== */
+.pricing-table {
+  max-width: 1100px;
+  margin: 0 auto 80px;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.table-header,
+.table-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  padding: 16px 20px;
+  align-items: center;
+}
+
+.table-header {
+  background: #f9fafb;
+  font-weight: 600;
+}
+
+.pubnub {
+  color: #e11d2e;
+  font-weight: 700;
+}
+
+.table-row {
+  border-top: 1px solid #e5e7eb;
+  font-size: 15px;
+}
+
+.included {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.extra {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+/* ===== ANNUAL ===== */
+.annual-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.annual-section h2 {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.annual-section p {
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 50px;
+}
+
+.annual-content {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* SLIDER */
+.slider-box {
+  text-align: left;
+}
+
+.slider-box label {
+  font-weight: 600;
+}
+
+.slider-box input[type="range"] {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.slider-values {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #777;
+}
+
+.mau-input {
+  margin-top: 15px;
+  width: 120px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* PRICE CARD */
+.price-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.price-label {
+  font-size: 14px;
+  color: #555;
+}
+
+.price-card h3 {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.price-card h3 span {
+  font-size: 16px;
+}
+
+.price-desc {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.price-btn {
+  background: #d61f2a;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.price-btn:hover {
+  background: #b91c1c;
+}
+
+.price-card small {
+  display: block;
+  margin-top: 15px;
+  font-size: 12px;
+  color: #777;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .annual-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.trust-section {
+  padding: 80px 20px;
+  background: #fff;
+}
+
+/* TITLE */
+.trust-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+/* TRUST CARD */
+.trust-card {
+  max-width: 1100px;
+  margin: 0 auto 80px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 30px;
+  gap: 20px;
+}
+
+.trust-item {
+  text-align: center;
+}
+
+.trust-item h3 {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.trust-item p {
+  color: #666;
+  font-size: 14px;
+}
+
+/* COMPLIANCE */
+.compliance-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 50px;
+  align-items: start;
+}
+
+/* BADGES */
+.compliance-icons {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  text-align: center;
+  width: 120px;
+}
+
+.circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #f3f4f6;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* CONTENT */
+.compliance-content h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.compliance-content p {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* FEATURES */
+.compliance-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.feature {
+  display: flex;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.feature strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .trust-card {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .compliance-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .compliance-features {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ready-wrapper {
+  padding: 80px 20px;
+  background: #fff;
+}
+
+/* CTA CARD */
+.ready-card {
+  max-width: 1200px;
+  margin: 0 auto 70px;
+  border: 1px solid #cfe0ff;
+  border-radius: 18px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  overflow: hidden;
+}
+
+/* LEFT */
+.ready-left {
+  padding: 50px;
+}
+
+.ready-left h2 {
+  font-size: 32px;
+  margin-bottom: 14px;
+}
+
+.ready-left p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* BUTTONS */
+.ready-actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: #d11c24;
+  color: #fff;
+  border: none;
+  padding: 14px 24px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #b9161d;
+}
+
+.btn-outline {
+  background: #fff;
+  border: 1px solid #cfd8e3;
+  padding: 14px 22px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* RIGHT IMAGE */
+.ready-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* MAU INFO */
+.mau-info {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mau-info h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.mau-info p {
+  color: #555;
+  line-height: 1.7;
+}
+
+.mau-info a {
+  color: #0057ff;
+  text-decoration: none;
+}
+
+.mau-info a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .ready-card {
+    grid-template-columns: 1fr;
+  }
+
+  .ready-right {
+    display: none;
+  }
+
+  .ready-left {
+    padding: 35px;
+  }
+}

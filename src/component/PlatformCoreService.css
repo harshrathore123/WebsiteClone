@@ -1,0 +1,567 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.core-hero {
+  min-height: 90vh;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.18), transparent 60%),
+    linear-gradient(135deg, #020c3a, #021a6b);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.core-hero h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.core-hero p {
+  max-width: 760px;
+  margin: 0 auto 90px;
+  font-size: 16px;
+  color: #c7d2fe;
+  line-height: 1.6;
+}
+
+.icon-orbit {
+  position: relative;
+  width: 540px;
+  height: 540px;
+  margin: 0 auto;
+}
+
+.pn-center {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 120px;
+  height: 120px;
+  background: #dc2626;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 44px;
+  font-weight: 700;
+  color: white;
+  z-index: 3;
+  box-shadow:
+    0 0 30px rgba(220, 38, 38, 0.6),
+    0 0 60px rgba(220, 38, 38, 0.35);
+}
+
+.orbit-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 56px;
+  height: 56px;
+  margin: -28px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #e5e7eb;
+  backdrop-filter: blur(6px);
+  transition: all 0.3s ease;
+}
+
+.orbit-front {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  z-index: 2;
+  animation: float 6s ease-in-out infinite;
+}
+
+.orbit-front:hover {
+  background: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 0 18px rgba(96, 165, 250, 0.7);
+  transform: scale(1.08);
+}
+
+.orbit-back {
+  width: 72px;
+  height: 72px;
+  font-size: 16px;
+  opacity: 0.18;
+  filter: blur(1.2px);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  z-index: 1;
+  animation: slowFloat 10s ease-in-out infinite;
+}
+
+.orbit-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+}
+
+.orbit-icon {
+  width: 56px;
+  height: 56px;
+  margin: -28px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #e5e7eb;
+  backdrop-filter: blur(6px);
+}
+
+
+.orbit-front {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  animation: float 6s ease-in-out infinite;
+  z-index: 2;
+}
+
+
+.orbit-back {
+  width: 72px;
+  height: 72px;
+  font-size: 16px;
+  opacity: 0.18;
+  filter: blur(1.2px);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  animation: slowFloat 10s ease-in-out infinite;
+  z-index: 1;
+}
+
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes slowFloat {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slowFloat {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 900px) {
+  .icon-orbit {
+    width: 400px;
+    height: 400px;
+  }
+
+  .core-hero h1 {
+    font-size: 34px;
+  }
+
+  .core-hero p {
+    font-size: 15px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 700px) {
+  .icon-orbit {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .orbit-icon {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 0;
+    transform: none !important;
+  }
+
+  .orbit-back {
+    display: none;
+  }
+
+  .pn-center {
+    position: relative;
+    margin-bottom: 20px;
+  }
+}
+
+/* Section 2 */
+/* ================= SECTION ================= */
+.messaging-section {
+  padding: 120px 60px;
+  background: radial-gradient(
+      circle at 50% 30%,
+      rgba(59, 130, 246, 0.15),
+      transparent 60%
+    ),
+    linear-gradient(135deg, #020c3a, #021a6b);
+  text-align: center;
+  color: white;
+}
+
+.messaging-section h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.messaging-subtitle {
+  max-width: 720px;
+  margin: 0 auto 80px;
+  font-size: 15px;
+  color: #c7d2fe;
+  line-height: 1.6;
+}
+
+/* ================= GRID ================= */
+.messaging-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+/* ================= CARD ================= */
+.messaging-card {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.06),
+    rgba(255, 255, 255, 0.03)
+  );
+  border-radius: 22px;
+  padding: 32px;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+  transition: all 0.4s ease;
+  min-height: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.messaging-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+.messaging-card h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.messaging-card p {
+  font-size: 14px;
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+/* ================= VISUAL ================= */
+.card-visual {
+  margin-top: 24px;
+  height: 160px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: #93c5fd;
+  font-size: 12px;
+  position: relative;
+}
+
+/* In-app messaging visual */
+.card-visual .center-node {
+  background: #1e40af;
+  padding: 10px 14px;
+  border-radius: 50%;
+  color: white;
+}
+
+.card-visual .node {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 6px 10px;
+  border-radius: 12px;
+}
+
+/* Push notification visual */
+.card-visual.phone {
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 14px;
+}
+
+.phone-header {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.notification {
+  margin-top: 12px;
+  background: #1e3a8a;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 12px;
+  color: white;
+}
+
+/* Event hub visual */
+.card-visual.flow span {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 6px 10px;
+  border-radius: 10px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1100px) {
+  .messaging-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .messaging-section {
+    padding: 80px 30px;
+  }
+}
+
+/* Section 3 */
+/* ================= SECTION ================= */
+.app-services {
+  padding: 100px 60px;
+  background: #f9fafb;
+  text-align: center;
+}
+
+.app-services h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+.app-services-subtitle {
+  max-width: 760px;
+  margin: 0 auto 70px;
+  font-size: 15px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* ================= GRID ================= */
+.app-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ================= CARD ================= */
+.app-service-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 28px;
+  text-align: left;
+  border: 1px solid #eef2f7;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.35s ease;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.app-service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+}
+
+/* Text */
+.app-service-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.app-service-card p {
+  font-size: 13.5px;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+/* ================= VISUAL PLACEHOLDER ================= */
+.app-service-visual {
+  margin-top: 26px;
+  height: 160px;
+  border-radius: 14px;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(239, 68, 68, 0.12), transparent 40%),
+    radial-gradient(circle at 70% 70%, rgba(59, 130, 246, 0.12), transparent 45%),
+    #f3f4f6;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1100px) {
+  .app-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .app-services {
+    padding: 70px 25px;
+  }
+
+  .app-services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .app-service-card {
+    min-height: auto;
+  }
+}
+
+/* Section 4*/
+
+/* ================= CONTACT CTA ================= */
+.contact-cta {
+  padding: 80px 60px;
+  background: #ffffff;
+}
+
+.contact-card {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #c7dbff;
+  border-radius: 16px;
+  padding: 32px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+/* Left content */
+.contact-content h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+.contact-content p {
+  font-size: 14px;
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  max-width: 480px;
+}
+
+/* Buttons */
+.contact-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-primary {
+  background: #e11d48;
+  color: #ffffff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #be123c;
+}
+
+.btn-outline {
+  background: #ffffff;
+  border: 1px solid #cbd5f5;
+  color: #1f2937;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  background: #f3f4f6;
+}
+
+/* Image */
+.contact-image {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.contact-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .contact-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .contact-content p {
+    max-width: 100%;
+  }
+
+  .contact-actions {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .contact-image {
+    height: 200px;
+  }
+}

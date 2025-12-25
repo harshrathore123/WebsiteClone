@@ -1,0 +1,272 @@
+*{
+    margin: 0 auto;
+}
+.careers-hero {
+  background: linear-gradient(135deg, #020c3a, #021a6b);
+  padding: 90px 80px;
+  color: white;
+}
+
+.careers-hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* LEFT */
+.careers-content {
+  max-width: 620px;
+}
+
+.careers-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 18px;
+}
+
+.careers-content h1 {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 22px;
+}
+
+.careers-content p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #d1d5db;
+  margin-bottom: 16px;
+}
+
+.careers-cta {
+  margin-top: 20px;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+/* RIGHT IMAGE */
+.careers-image {
+  border-radius: 18px;
+  overflow: hidden;
+  background: #000;
+}
+
+.careers-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .careers-hero {
+    padding: 60px 30px;
+  }
+
+  .careers-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .careers-content h1 {
+    font-size: 34px;
+  }
+
+  .careers-image {
+    height: 260px;
+  }
+}
+
+@media (max-width: 500px) {
+  .careers-content h1 {
+    font-size: 28px;
+  }
+}
+.core-values {
+  padding: 100px 80px;
+  background: linear-gradient(135deg, #020c3a, #021a6b);
+  color: white;
+  text-align: center;
+}
+
+.core-values h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+/* GRID */
+.values-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* CARD */
+.value-card {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  padding: 36px 28px;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(239, 68, 68, 0.6);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* ICON */
+.value-icon {
+  font-size: 38px;
+  margin-bottom: 22px;
+  color: #ef4444;
+}
+
+/* TEXT */
+.value-card h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.value-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #d1d5db;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .core-values {
+    padding: 60px 20px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .core-values h2 {
+    font-size: 28px;
+  }
+}
+
+.careers-section {
+  padding: 100px 80px;
+  background: #ffffff;
+  color: #111827;
+}
+
+/* BENEFITS */
+.benefits-wrapper h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px 60px;
+  margin-bottom: 80px;
+}
+
+.benefit {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.check {
+  color: #2563eb;
+  font-size: 18px;
+  margin-top: 3px;
+}
+
+.benefit h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.benefit p {
+  font-size: 14px;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+/* OPEN POSITIONS */
+.positions-wrapper h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.position-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  padding: 18px 26px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  margin-bottom: 18px;
+  font-size: 14px;
+}
+
+.position-card strong {
+  font-weight: 600;
+}
+
+.location {
+  text-align: right;
+  color: #374151;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .position-card {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    text-align: left;
+  }
+
+  .location {
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .careers-section {
+    padding: 60px 20px;
+  }
+
+  .benefits-wrapper h2,
+  .positions-wrapper h2 {
+    font-size: 24px;
+  }
+}
+

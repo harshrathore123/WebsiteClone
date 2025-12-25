@@ -1,6 +1,3 @@
-import Footer from "./Footer";
-import Navbar from "./Navbar";
-
 export default function Home(){
     const industries = [
   {
@@ -37,8 +34,6 @@ export default function Home(){
     return(
         <>
             <div className="app">
-      {/* Navbar */}
-      <Navbar/>
 
       {/* Hero Section */}
       <section className="hero">
@@ -55,8 +50,8 @@ export default function Home(){
           </p>
 
           <div className="hero-buttons">
-            <button className="btn-primary large">Start Building</button>
-            <button className="btn-outline large">Contact Sales</button>
+            <button className="btn-primaryi large">Start Building</button>
+            <button className="btn-outlinei large">Contact Sales</button>
           </div>
         </div>
 
@@ -67,15 +62,6 @@ export default function Home(){
 
       {/* Trust and Feature */}
       <section className="trust-section">
-      {/* Logos */}
-      <div className="logo-row">
-        <span>LIFE.CHURCH</span>
-        <span>ticketmaster</span>
-        <span>fanhub</span>
-        <span>yelp</span>
-        <span>BEAMABLE</span>
-        <span>SERVICEMAX</span>
-      </div>
 
       {/* Feature Box */}
       <div className="feature-box">
@@ -272,9 +258,6 @@ export default function Home(){
     </div>
   </div>
 </section>
-
-    {/* Footer */}
-    <Footer/>
 
 
     </div>
